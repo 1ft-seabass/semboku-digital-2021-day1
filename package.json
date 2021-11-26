@@ -1,0 +1,34 @@
+{
+  "name": "semboku-digital-2021-day1",
+  "version": "1.0.0",
+  "description": "semboku-digital-2021-day1",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "honkit serve base src",
+    "build": "honkit build base docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ft-seabass/semboku-digital-2021-day1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ft-seabass/semboku-digital-2021-day1/issues"
+  },
+  "homepage": "https://github.com/1ft-seabass/semboku-digital-2021-day1#readme",
+  "devDependencies": {
+    "honkit": "^3.6.23"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-hide-published-with": "0.0.1",
+    "gitbook-plugin-intopic-toc": "^1.1.1"
+  }
+}
