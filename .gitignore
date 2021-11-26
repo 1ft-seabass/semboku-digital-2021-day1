@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# HonKit
+# node_modules
+memo/
+src/
