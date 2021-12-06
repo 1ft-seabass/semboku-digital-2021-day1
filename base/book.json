@@ -1,0 +1,15 @@
+{
+  "title": "仙北市デジタル人材育成講座",
+  "description": "仙北市デジタル人材育成講座の 1 日目資料",
+  "language": "ja",
+  "plugins": [
+    "anchors",
+    "hide-published-with",
+    "copy-code-button",
+    "intopic-toc",
+    "back-to-top-button"
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  }
+}

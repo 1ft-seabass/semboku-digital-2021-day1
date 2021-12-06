@@ -8,7 +8,10 @@
   },
   "scripts": {
     "serve": "honkit serve base src",
-    "build": "honkit build base docs"
+    "build": "honkit build base docs",
+    "open-dev":"start http://localhost:4000/",
+    "open":"start https://1ft-seabass.github.io/semboku-digital-2021-day1/",
+    "gyazo": "start C:\\workspace\\_my_application\\gyazo_uploader\\GayzoUploader-win32-x64\\GayzoUploader.exe"
   },
   "repository": {
     "type": "git",
