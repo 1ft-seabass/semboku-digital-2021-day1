@@ -287,6 +287,116 @@
                                 <h1 id="enebular-を動かそう"><a name="enebular-を動かそう" class="plugin-anchor" href="#enebular-を動かそう"><i class="fa fa-link" aria-hidden="true"></i></a>enebular を動かそう</h1>
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="このページの概要"><a name="このページの概要" class="plugin-anchor" href="#このページの概要"><i class="fa fa-link" aria-hidden="true"></i></a>このページの概要</h2>
+<p>このページでは、実際に enebular をブラウザで動かして基本的な使い方やフローの作り方を理解していきます。</p>
+<h2 id="注意--enebular-には最新の-chrome-ブラウザでアクセスしましょう"><a name="注意--enebular-には最新の-chrome-ブラウザでアクセスしましょう" class="plugin-anchor" href="#注意--enebular-には最新の-chrome-ブラウザでアクセスしましょう"><i class="fa fa-link" aria-hidden="true"></i></a>注意 : enebular には最新の Chrome ブラウザでアクセスしましょう</h2>
+<p><img src="https://i.gyazo.com/5e1ec175cac8cc7db65c7ce4c04f2bae.png" alt="image"></p>
+<p>enebular には最新の Chrome ブラウザでアクセスしましょう。</p>
+<h2 id="enebular-へログイン"><a name="enebular-へログイン" class="plugin-anchor" href="#enebular-へログイン"><i class="fa fa-link" aria-hidden="true"></i></a>enebular へログイン</h2>
+<p><img src="https://i.gyazo.com/7f6553a1ad9aaf68d497a8cc6c3805f4.jpg" alt="image"></p>
+<p><a href="https://www.enebular.com/ja/" target="_blank">https://www.enebular.com/ja/</a> にアクセスします。</p>
+<p><img src="https://i.gyazo.com/aea8ffa24d015ec37c14c444c12a68e8.png" alt="image"></p>
+<p>右上のサインインをクリックしてサインインページを表示します。</p>
+<p><img src="https://i.gyazo.com/7e67da7d8aefcf305956822f42a68683.png" alt="image"></p>
+<p><a href="00-preparation.html">事前準備</a> でつくった自分の enebular アカウントでサインインします。</p>
+<p><img src="https://i.gyazo.com/b40f201363ea704a542c325a31188d86.png" alt="image"></p>
+<p>サインイン後の画面、ダッシュボードが表示されました。</p>
+<h2 id="project-の作成"><a name="project-の作成" class="plugin-anchor" href="#project-の作成"><i class="fa fa-link" aria-hidden="true"></i></a>Project の作成</h2>
+<p>こちらの <a href="https://docs.enebular.com/ja/GetStarted/Introduction.html" target="_blank">Introduction</a> を参考に進めていきます。</p>
+<p><img src="https://i.gyazo.com/b40f201363ea704a542c325a31188d86.png" alt="image"></p>
+<p>enebular を始めるには、まず Project を作成します。サインイン後の画面にある Create Project からプロジェクトを作成します。</p>
+<p><img src="https://i.gyazo.com/dda13a6dbeadafb6491b753406d8155c.png" alt="image"></p>
+<p>Create Project のウィンドウが表示されるので project name を <code>semboku-digital-2021-day1</code> と入力して Submit ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/29f6e5a9940709862b09e375d60bf7ed.png" alt="image"></p>
+<p>入力したプロジェクトで Project が作成されたことがダッシュボードの一覧で確認できます。</p>
+<h2 id="asset-の作成"><a name="asset-の作成" class="plugin-anchor" href="#asset-の作成"><i class="fa fa-link" aria-hidden="true"></i></a>Asset の作成</h2>
+<p>Project を作成できたら enebular の Asset の 1 つである Flow を作成しましょう。</p>
+<p><img src="https://i.gyazo.com/83e489254734c6c2374b0746664b19ba.png" alt="image"></p>
+<p>作成した Project をクリックします。</p>
+<p><img src="https://i.gyazo.com/8603d62dde1c42d21bd74bfffdbbc699.png" alt="image"></p>
+<p>Project の管理画面に移動します。</p>
+<p><img src="https://i.gyazo.com/513cf5804faa14e1022d09d0d8316123.png" alt="image"></p>
+<p>右下の + ボタンをクリックすると Asset を作成するウィンドウが表示されます。</p>
+<p><img src="https://i.gyazo.com/11eb54dc446d6e63f87c1f6394025a6e.png" alt="image"></p>
+<p>Asset Type は flow を選択して、Flow のタイトル <code>flow-semboku-first-step</code> とつけます。</p>
+<p>Flow へのデフォルトのアクセス権（Default Privilege ）は今回は edit, deploy, publish に設定してください。 Continue ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/0e74d5e7ed87c7602653f3879790ab91.png" alt="image"></p>
+<p>作成が完了し、Flow の詳細ページに移動します。</p>
+<p><img src="https://i.gyazo.com/451dd8ff068ebcd230a77a65f3c68c91.png" alt="image"></p>
+<p>Edit ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/98736f6f6724b9e6caf6faee92380646.png" alt="image"></p>
+<p>左上に Loading がでたら、しばらく待ちます。</p>
+<p><img src="https://i.gyazo.com/24326a0a917c45ac033ca382b83e1b9a.png" alt="image"></p>
+<p>フローを編集する画面が立ち上がります。こちらが、先ほどふれた Node-RED というローコードツールで出来ているところです。</p>
+<h2 id="enebular-の活動限界について"><a name="enebular-の活動限界について" class="plugin-anchor" href="#enebular-の活動限界について"><i class="fa fa-link" aria-hidden="true"></i></a>enebular の活動限界について</h2>
+<p><img src="https://i.gyazo.com/d4e5595e4ee627fadc4dc5a1008e8ff4.png" alt="image"></p>
+<p>WEBブラウザで enebular のフローエディタを使っている際には、1セッションは「60分まで」となっています。ここでいう「1セッション」は、ダッシュボードから編集するフローを選択し、「Edit」ボタンを押してフローエディタが起動してから始まります。</p>
+<p>このあたりの詳細について、以下のページを元に説明します。</p>
+<p><a href="https://blog.enebular.com/enebular/session-time/" target="_blank">enebularの活動限界について | enebular blog</a></p>
+<h2 id="node-red-とは"><a name="node-red-とは" class="plugin-anchor" href="#node-red-とは"><i class="fa fa-link" aria-hidden="true"></i></a>Node-RED とは</h2>
+<p><img src="https://i.gyazo.com/07c703e8af39a7a5aaf5e660f663b576.png" alt="image"></p>
+<p><a href="https://nodered.jp/" target="_blank">Node-RED日本ユーザ会</a></p>
+<p>enebular のエディタで使われている Node-RED は Node.js で動く仕組みです。</p>
+<p>Node-RED はサーバーとフロントエンドの両方を作れる仕組みです。GUI（ビジュアルで見えるUI）によって、APIを取得する仕組みであったり、dashboard のように表示も作れます。</p>
+<h2 id="動かしてみよう"><a name="動かしてみよう" class="plugin-anchor" href="#動かしてみよう"><i class="fa fa-link" aria-hidden="true"></i></a>動かしてみよう</h2>
+<p><a href="https://nodered.jp/docs/tutorials/first-flow" target="_blank">はじめてのフロー : Node-RED日本ユーザ会</a></p>
+<p>こちらを元に進めます。</p>
+<p>ウォームアップしてみましょう。</p>
+<p><img src="https://i.gyazo.com/b94d2d8a7a58febf76226db658c7d5dc.png" alt="image"></p>
+<p>このようなシンプル仕組みをつくります。</p>
+<h2 id="ノードについて"><a name="ノードについて" class="plugin-anchor" href="#ノードについて"><i class="fa fa-link" aria-hidden="true"></i></a>ノードについて</h2>
+<p><img src="https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png" alt="image"></p>
+<p>まず ノード（Node）はNode-REDを構成する基本的な構成要素です。処理をする機能のかたまりです。</p>
+<p><img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" alt="image"></p>
+<p>ノードはフロー中の前方のノードからメッセージを受け取るか、外部イベントを受け取ることで動き出します。ノードはメッセージまたはイベントを処理し、 フロー中の次のノードにメッセージを送ります。左から右に処理されていきます。</p>
+<p><img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" alt="image"></p>
+<p>メッセージはJSONデータで構成され、<code>msg</code> という一番上のオブジェクトにぶら下がっている <code>payload</code> というオブジェクトの中で、各ノードで処理された内容がバケツリレーのようにやり取りされていきます。</p>
+<p><img src="https://i.gyazo.com/7a554e64647323ace99a930de52bfe67.png" alt="image"></p>
+<p>こんな感じです。</p>
+<p><img src="https://i.gyazo.com/20007903edfd97e9aabddeedd5d6d8d5.png" alt="image"></p>
+<p>今回は inject というノードでボタンクリックをきっかけにメッセージを送り、 debug ノードという送られてきたメッセージをサイドバーのデバッグタブに表示するノードに送ります。</p>
+<h2 id="画面紹介"><a name="画面紹介" class="plugin-anchor" href="#画面紹介"><i class="fa fa-link" aria-hidden="true"></i></a>画面紹介</h2>
+<p><img src="https://i.gyazo.com/3daddc165d37ee01f4979f41b24aca58.png" alt="image"></p>
+<p>パレットはインストール済みで利用可能なすべてのノードが含まれます。ノードが置かれているエリアです。</p>
+<p><img src="https://i.gyazo.com/0585e0413f7414fbd84611d138041dd1.png" alt="image"></p>
+<p>ワークスペースはパレットからノードを配置してフロー（データの流れ）を作るエリアです。</p>
+<p><img src="https://i.gyazo.com/56fb7c652379633d8d86c52f5784e799.png" alt="image"></p>
+<p>サイドバーは、エディタ内に多くの便利なツールを提供するエリアです。</p>
+<ul>
+<li>ノードについてのさらなる情報</li>
+<li>ヘルプを確認するパネル</li>
+<li>デバッグメッセージを確認するパネル</li>
+<li>フローの設定ノードを確認するパネル</li>
+</ul>
+<p>などがあります。</p>
+<h2 id="inject-ノードと-debug-ノードをつなげていく"><a name="inject-ノードと-debug-ノードをつなげていく" class="plugin-anchor" href="#inject-ノードと-debug-ノードをつなげていく"><i class="fa fa-link" aria-hidden="true"></i></a>inject ノードと debug ノードをつなげていく</h2>
+<p><img src="https://i.gyazo.com/69d9424ea7db4779794c1d39e1d0a44f.png" alt="image"></p>
+<p>inject ノードをワークスペースにドラックアンドドロップします。</p>
+<p><img src="https://i.gyazo.com/4ab5cd15ee540f8b2181cafc29cf9377.png" alt="image"></p>
+<p>inject ノードの横にdebugノードをドラックアンドドロップします。</p>
+<p><img src="https://i.gyazo.com/b8eb34fb3296018ddae614e01bd47a50.png" alt="image"></p>
+<p>inject ノードと debug ノードをつなぎます。つなぐものはワイヤーといいます。</p>
+<p><img src="https://i.gyazo.com/58de57346d51b7620c32562f9c8690bf.png" alt="image"></p>
+<p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
+<p><img src="https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png" alt="image"></p>
+<h2 id="動かしてみる"><a name="動かしてみる" class="plugin-anchor" href="#動かしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>動かしてみる</h2>
+<p><img src="https://i.gyazo.com/486f98add3229d4cc880359bf1b3b643.png" alt="image"></p>
+<p>debugノードでデータがきてるか確認します。</p>
+<p><img src="https://i.gyazo.com/6efbc1b0671669a3e5201e23e7298216.png" alt="image"></p>
+<p>debugノードのデータはサイドバーのデバッグタブをクリックすると見れます。</p>
+<p><img src="https://i.gyazo.com/f99e3989db06dd84900022d8be76cb75.png" alt="image"></p>
+<p>injectノードの横のボタンを押すとdebugノードにデータが送られます。今回はinjectノードは日付（タイムスタンプ）を送っています。さきほどのデバッグタブでdebugノードが受け付けたデータを確認できます。</p>
+<h2 id="injectノードで送るデータを変更"><a name="injectノードで送るデータを変更" class="plugin-anchor" href="#injectノードで送るデータを変更"><i class="fa fa-link" aria-hidden="true"></i></a>injectノードで送るデータを変更</h2>
+<p>injectノードをダブルクリックしてデータを変更しましょう。</p>
+<p><img src="https://i.gyazo.com/05dc870ae85c44d1be74d97b1a474b41.png" alt="image"></p>
+<p>ノードはダブルクリックすると細かな設定ができます。</p>
+<p><img src="https://i.gyazo.com/6416484adf11e2410f0e5e1042da7f53.png" alt="image"></p>
+<p>ペイロードがデータの内容です。数値に変更しましょう。</p>
+<p><img src="https://i.gyazo.com/290cce9c52a9736289eb3317a8f18f36.png" alt="image"></p>
+<p>50に設定して完了をクリックします。</p>
+<p><img src="https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png" alt="image"></p>
+<p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
+<p><img src="https://i.gyazo.com/5ce3b9ec73285db932270eabfab4ac63.png" alt="image"></p>
+<p>動かして、inject ノードから送られるデータが 50 の数値になっているか確認します。</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
 <p><img src="https://i.gyazo.com/aba8ccd625e7320883851b71ebd0caf2.png" alt="image"></p>
 <p>ここまでで質問があればどうぞ！</p>
@@ -331,7 +441,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"next":{"title":"WEB アプリを体験して仕組みを知ろう","level":"1.5","depth":1,"ref":"","articles":[{"title":"Discover Flow で WEB アプリ体験","level":"1.5.1","depth":2,"path":"04-discover-flow.md","ref":"04-discover-flow.md","articles":[]},{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"path":"05-try-flow-changing.md","ref":"05-try-flow-changing.md","articles":[]}]},"previous":{"title":"enebular とは","level":"1.4.1","depth":2,"path":"02-enebular-introduction.md","ref":"02-enebular-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-enebular-getting-started.md","mtime":"2021-12-10T03:48:05.431Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T03:50:28.322Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"next":{"title":"WEB アプリを体験して仕組みを知ろう","level":"1.5","depth":1,"ref":"","articles":[{"title":"Discover Flow で WEB アプリ体験","level":"1.5.1","depth":2,"path":"04-discover-flow.md","ref":"04-discover-flow.md","articles":[]},{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"path":"05-try-flow-changing.md","ref":"05-try-flow-changing.md","articles":[]}]},"previous":{"title":"enebular とは","level":"1.4.1","depth":2,"path":"02-enebular-introduction.md","ref":"02-enebular-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-enebular-getting-started.md","mtime":"2021-12-10T06:53:33.662Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T06:54:30.284Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

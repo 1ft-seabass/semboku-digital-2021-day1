@@ -33,6 +33,16 @@ enebularの名前は、星の数（nebular）ほどあるデバイスを、ア�
 
 ここでは IoT アプリケーションが強調されていますが、enebular の中で使われている Node-RED とうローコードツールを使って WEB アプリについても開発することができます。
 
+## enebular ポータル
+
+![image](https://i.gyazo.com/f9cdb4dc85d45f01c48e97b299c12714.jpg)
+
+> [enebular developers ポータル](https://blog.enebular.com/enebular/enebular_developers_portal/)
+
+enebular developers ポータルは enebular さまざまな技術リソースが集まっています。
+
+より簡単に使い始められるようなガイドが数多くあり、使い慣れたてきても簡単に各種情報にアクセスできるようになっています。新しい情報や技術リソースを追加して、随時更新されているので、ぜひ見てみましょう。
+
 ## ひとまず触っていきましょう
 
 ![image](https://i.gyazo.com/8b8881e726a949760ce1cf326ea9eb79.png)
