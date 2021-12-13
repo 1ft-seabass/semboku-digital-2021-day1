@@ -321,8 +321,10 @@
                                 <h1 id="位置情報メモ投稿アプリフロー体験してみよう"><a name="位置情報メモ投稿アプリフロー体験してみよう" class="plugin-anchor" href="#位置情報メモ投稿アプリフロー体験してみよう"><i class="fa fa-link" aria-hidden="true"></i></a>位置情報メモ投稿アプリフロー体験してみよう</h1>
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="今回の仕組み"><a name="今回の仕組み" class="plugin-anchor" href="#今回の仕組み"><i class="fa fa-link" aria-hidden="true"></i></a>今回の仕組み</h2>
-<p>（作成中）</p>
-<p>□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■</p>
+<p><img src="https://i.gyazo.com/587e13c10ad85a84e73c2725b1b1ee72.png" alt="image"></p>
+<p>この仕組みは、位置情報メモ投稿アプリフロー体験します。</p>
+<p>まず、Node-RED のダッシュボード機能でできた WEB アプリに地図機能があり、その地図に対して位置情報を伝えます。地図に登録した地点のメッセージを書き込み、LINE Notify 確認します。</p>
+<p>みなさんの URL を教え合って、みなさんの WEB アプリを操作してみましょう</p>
 <h2 id="discover-flow"><a name="discover-flow" class="plugin-anchor" href="#discover-flow"><i class="fa fa-link" aria-hidden="true"></i></a>Discover Flow</h2>
 <p>以下のフローを <a href="04-00-discover-flow.html">先ほど学んだ手順</a> を参考にインポートしましょう。</p>
 <p><a href="https://enebular.com/discover/flow/31781034-83fe-4933-aae8-af2195a29394" target="_blank">flow-semboku-location-app</a></p>
@@ -344,7 +346,7 @@
 <p>デプロイボタンをクリックして、今回の変更をフローに反映します。</p>
 <h2 id="動かしてみる"><a name="動かしてみる" class="plugin-anchor" href="#動かしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>動かしてみる</h2>
 <p><img src="https://i.gyazo.com/17ce8db81a3ef51ab06bef4b8ef7a59a.png" alt="image"></p>
-<p>今回はフローの変更はなくすぐにはじめられます。</p>
+<p>フローを体験してみましょう。</p>
 <p><img src="https://i.gyazo.com/f1aae1ca905dcaa3433e1cdfaa36559b.png" alt="image"></p>
 <p>サイドバーから Dashboard のタブを表示します。</p>
 <p><img src="https://i.gyazo.com/c504b26edfe858dc68b8eff5c6f0f75b.png" alt="image"></p>
@@ -369,7 +371,7 @@
 <p>登録した地点にピンが表示されます。</p>
 <p><img src="https://i.gyazo.com/36b75292254b7ad3f582206d001305d7.png" alt="image"></p>
 <p>LINE Notify をスマートフォンで見てみると、登録された地点とメッセージが確認できます。</p>
-<h2 id="みなさんのurlを教え合って操作してみましょう"><a name="みなさんのurlを教え合って操作してみましょう" class="plugin-anchor" href="#みなさんのurlを教え合って操作してみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>みなさんのURLを教え合って操作してみましょう</h2>
+<h2 id="みなさんのurlを教え合ってみなさんの-web-アプリを操作してみましょう"><a name="みなさんのurlを教え合ってみなさんの-web-アプリを操作してみましょう" class="plugin-anchor" href="#みなさんのurlを教え合ってみなさんの-web-アプリを操作してみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>みなさんのURLを教え合ってみなさんの WEB アプリを操作してみましょう</h2>
 <p>（書き途中）</p>
 <h2 id="仕組みの説明"><a name="仕組みの説明" class="plugin-anchor" href="#仕組みの説明"><i class="fa fa-link" aria-hidden="true"></i></a>仕組みの説明</h2>
 <p><img src="https://i.gyazo.com/17ce8db81a3ef51ab06bef4b8ef7a59a.png" alt="image"></p>
@@ -425,7 +427,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"位置情報メモ投稿アプリフロー体験","level":"1.5.1.2","depth":3,"next":{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"path":"05-try-flow-changing.md","ref":"05-try-flow-changing.md","articles":[]},"previous":{"title":"LINE Notify フロー体験","level":"1.5.1.1","depth":3,"path":"04-01-flow-line-notify.md","ref":"04-01-flow-line-notify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"04-02-location-app.md","mtime":"2021-12-12T13:35:30.268Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-12T13:35:49.635Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"位置情報メモ投稿アプリフロー体験","level":"1.5.1.2","depth":3,"next":{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"path":"05-try-flow-changing.md","ref":"05-try-flow-changing.md","articles":[]},"previous":{"title":"LINE Notify フロー体験","level":"1.5.1.1","depth":3,"path":"04-01-flow-line-notify.md","ref":"04-01-flow-line-notify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"04-02-location-app.md","mtime":"2021-12-13T03:51:59.038Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-13T03:52:11.200Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
