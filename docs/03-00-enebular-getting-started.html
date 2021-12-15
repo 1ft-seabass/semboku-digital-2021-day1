@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"></head>
         <meta property="og:type" content="article">
-        <meta property="og:url" content="03-enebular-getting-started.html">
+        <meta property="og:url" content="03-00-enebular-getting-started.html">
         <meta property="og:image" content="https://i.gyazo.com/d7e9a95785f39c62aae95a7a4112710a.png">
         <meta property="og:title" content="仙北市デジタル人材育成講座">
         <meta property="og:description" content="仙北市デジタル人材育成講座の 1 日目資料">
@@ -66,6 +66,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="03-01-enebular-hello-world.html" />
     
     
     <link rel="prev" href="02-enebular-introduction.html" />
@@ -163,9 +165,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="03-enebular-getting-started.html">
+        <li class="chapter active" data-level="1.4.2" data-path="03-00-enebular-getting-started.html">
             
-                <a href="03-enebular-getting-started.html">
+                <a href="03-00-enebular-getting-started.html">
             
                     
                     enebular を動かそう
@@ -173,6 +175,38 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="03-01-enebular-hello-world.html">
+            
+                <a href="03-01-enebular-hello-world.html">
+            
+                    
+                    enebular から WEB に Hello World しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="03-02-enebular-dashboard.html">
+            
+                <a href="03-02-enebular-dashboard.html">
+            
+                    
+                    enebular のダッシュボードを動かそう
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -401,15 +435,16 @@
 </ul>
 <p>などがあります。</p>
 <h2 id="inject-ノードと-debug-ノードをつなげていく"><a name="inject-ノードと-debug-ノードをつなげていく" class="plugin-anchor" href="#inject-ノードと-debug-ノードをつなげていく"><i class="fa fa-link" aria-hidden="true"></i></a>inject ノードと debug ノードをつなげていく</h2>
-<p><img src="https://i.gyazo.com/69d9424ea7db4779794c1d39e1d0a44f.png" alt="image"></p>
+<p>inject ノードと debug ノードをつなげていきましょう。</p>
+<p><img src="https://i.gyazo.com/15073084677b7d24a87128dec2c549ff.png" alt="image"></p>
 <p>inject ノードをワークスペースにドラックアンドドロップします。</p>
-<p><img src="https://i.gyazo.com/4ab5cd15ee540f8b2181cafc29cf9377.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/f24c1ed2de773f76ec79a3e613e3c521.png" alt="image"></p>
 <p>inject ノードの横にdebugノードをドラックアンドドロップします。</p>
-<p><img src="https://i.gyazo.com/b8eb34fb3296018ddae614e01bd47a50.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/34d4e6ebee0135e0fa73c94418c0edb0.png" alt="image"></p>
 <p>inject ノードと debug ノードをつなぎます。つなぐものはワイヤーといいます。</p>
-<p><img src="https://i.gyazo.com/58de57346d51b7620c32562f9c8690bf.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/4242b9d9fbe5a46fae8b6f9755292b70.png" alt="image"></p>
 <p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
-<p><img src="https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png" alt="image"></p>
 <h2 id="動かしてみる"><a name="動かしてみる" class="plugin-anchor" href="#動かしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>動かしてみる</h2>
 <p><img src="https://i.gyazo.com/486f98add3229d4cc880359bf1b3b643.png" alt="image"></p>
 <p>debugノードでデータがきてるか確認します。</p>
@@ -419,28 +454,21 @@
 <p>injectノードの横のボタンを押すとdebugノードにデータが送られます。今回はinjectノードは日付（タイムスタンプ）を送っています。さきほどのデバッグタブでdebugノードが受け付けたデータを確認できます。</p>
 <h2 id="injectノードで送るデータを変更"><a name="injectノードで送るデータを変更" class="plugin-anchor" href="#injectノードで送るデータを変更"><i class="fa fa-link" aria-hidden="true"></i></a>injectノードで送るデータを変更</h2>
 <p>injectノードをダブルクリックしてデータを変更しましょう。</p>
-<p><img src="https://i.gyazo.com/05dc870ae85c44d1be74d97b1a474b41.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/136c890ce0a675e988134848a5919348.png" alt="image"></p>
 <p>ノードはダブルクリックすると細かな設定ができます。</p>
-<p><img src="https://i.gyazo.com/6416484adf11e2410f0e5e1042da7f53.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/37981a8011fdf55554734fe8fd89dddc.png" alt="image"></p>
 <p>ペイロードがデータの内容です。数値に変更しましょう。</p>
-<p><img src="https://i.gyazo.com/290cce9c52a9736289eb3317a8f18f36.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/165103700f6305ca7d0ab51194b89c0d.png" alt="image"></p>
 <p>50に設定して完了をクリックします。</p>
-<p><img src="https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png" alt="image"></p>
 <p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
-<p><img src="https://i.gyazo.com/5ce3b9ec73285db932270eabfab4ac63.png" alt="image"></p>
-<p>動かして、inject ノードから送られるデータが 50 の数値になっているか確認します。</p>
-<h2 id="hello-world-を表示してみよう"><a name="hello-world-を表示してみよう" class="plugin-anchor" href="#hello-world-を表示してみよう"><i class="fa fa-link" aria-hidden="true"></i></a>Hello World を表示してみよう</h2>
-<p><img src="https://i.gyazo.com/e34659c975de64d07ec124b7c178ea02.jpg" alt="image"></p>
-<blockquote>
-<p>フローを編集し、プログラミングで定番のファースト ステップ、「Hello World」の文字列を開発環境で出力するところまでを解説します。3つのノードと、正しく組み合わせたかどうかを確認するデバッグのノードの4つのシンプルなフローを作ってみましょう。</p>
-</blockquote>
-<h2 id="ダッシュボードを表示しよう"><a name="ダッシュボードを表示しよう" class="plugin-anchor" href="#ダッシュボードを表示しよう"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードを表示しよう</h2>
-<p>（作成中）</p>
+<p><img src="https://i.gyazo.com/2dd239ef682f7c5ad26b72c41d94b513.png" alt="image"></p>
+<p>動かして、inject ノードから送られるデータが、サイドバーの debug タブで 50 の数値になっているか確認します。</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
 <p><img src="https://i.gyazo.com/aba8ccd625e7320883851b71ebd0caf2.png" alt="image"></p>
 <p>ここまでで質問があればどうぞ！</p>
 <h1 id="次にすすみましょう"><a name="次にすすみましょう" class="plugin-anchor" href="#次にすすみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>次にすすみましょう</h1>
-<p>左のナビゲーションから「Discover Flow で WEB アプリ体験」にすすみましょう。</p>
+<p>左のナビゲーションから「enebular から WEB に Hello World」にすすみましょう。</p>
 
                                 
                                 </section>
@@ -468,10 +496,14 @@
 
             
                 
-                <a href="02-enebular-introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: enebular とは">
+                <a href="02-enebular-introduction.html" class="navigation navigation-prev " aria-label="Previous page: enebular とは">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="03-01-enebular-hello-world.html" class="navigation navigation-next " aria-label="Next page: enebular から WEB に Hello World しよう">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -480,7 +512,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"next":{"title":"WEB アプリを体験して仕組みを知ろう","level":"1.5","depth":1,"ref":"","articles":[{"title":"Discover Flow で WEB アプリ体験","level":"1.5.1","depth":2,"path":"04-00-discover-flow.md","ref":"04-00-discover-flow.md","articles":[{"title":"LINE Notify フロー体験","level":"1.5.1.1","depth":3,"path":"04-01-flow-line-notify.md","ref":"04-01-flow-line-notify.md","articles":[]},{"title":"位置情報メモ投稿アプリフロー体験","level":"1.5.1.2","depth":3,"path":"04-02-location-app.md","ref":"04-02-location-app.md","articles":[]}]},{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"path":"05-try-flow-changing.md","ref":"05-try-flow-changing.md","articles":[]}]},"previous":{"title":"enebular とは","level":"1.4.1","depth":2,"path":"02-enebular-introduction.md","ref":"02-enebular-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-enebular-getting-started.md","mtime":"2021-12-10T07:35:29.601Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-13T03:57:15.640Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"next":{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},"previous":{"title":"enebular とは","level":"1.4.1","depth":2,"path":"02-enebular-introduction.md","ref":"02-enebular-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-00-enebular-getting-started.md","mtime":"2021-12-15T07:25:35.723Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-15T14:04:50.561Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

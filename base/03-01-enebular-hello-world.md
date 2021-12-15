@@ -6,7 +6,7 @@
 
 enebular および Node-RED の操作がつかめてきたところで、enebular から WEB に Hello World してみます。
 
-## 前回のフローを閉じましょう
+## 前回のフローを閉じる
 
 enebular のエディタは一つだけ開いて編集することができます。つまり、前回のフローを閉じてから、今回のフローを作っていきます。
 
@@ -94,9 +94,17 @@ template ノードをダブルクリックしてプロパティをプロパテ�
 
 ![image](https://i.gyazo.com/d03b6c8867ffad9aead817cb0043fbab.png)
 
-パレットから http response  ノードを探してワークスペースに配置します。
+パレットから http response ノードを探してワークスペースに配置します。
 
-## enebular エディタのフローの URL をメモする
+![image](https://i.gyazo.com/77a85016e2623240f3dd9221db04a470.png)
+
+このように template ノードの隣に配置してワイヤーでつなぎます。
+
+![image](https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png)
+
+デプロイボタンをクリックすると今作ったものが反映されます。
+
+## enebular エディタのフローの URL にアクセスする
 
 この入り口は `enebular エディタのフローの URL` + `/hello` でアクセスできます。
 
@@ -106,18 +114,29 @@ template ノードをダブルクリックしてプロパティをプロパテ�
 
 ![image](https://i.gyazo.com/c73da781b8181d4f4682750573264b60.png)
 
-マウスを乗せて確認して、`https://*******************.herokuapp.com/` の部分をメモしておきましょう。セッションの残り時間も書いてありますね。
+マウスを乗せて確認して、`https://*******************.herokuapp.com/` の部分をクリックしましょう。セッションの残り時間も書いてありますね。
 
+![image](https://i.gyazo.com/08def14e591a3d52c5e7ba4aee67aade.png)
 
+まだ `/hello` にはアクセスしてないので `Cannot GET /` で大丈夫です。
 
+## さらに `/hello` にアクセスしてみる
 
-## 余談：こちらにかなり近い教材もあります
+`先ほどメモしたenebular エディタのフローの URL` に `/hello` を加えて、今回の仕組みにアクセスしてみましょう。
 
-もし振り返ってみたい方はこちらも試してみてください。
+![image](https://i.gyazo.com/93767c7245b176f3d15fdbac509c3f44.png)
 
-![image](https://i.gyazo.com/e34659c975de64d07ec124b7c178ea02.jpg)
+アドレスバーに `/hello` を加えて Enter キーを押してアクセスします。
 
-> フローを編集し、プログラミングで定番のファースト ステップ、「Hello World」の文字列を開発環境で出力するところまでを解説します。3つのノードと、正しく組み合わせたかどうかを確認するデバッグのノードの4つのシンプルなフローを作ってみましょう。
+![image](https://i.gyazo.com/99ef30728044d3c1a95c7c049a859626.png)
+
+Hello World! と表示されました！
+
+これで enebular でつくった仕組みが WEB に表示できることが分かり、WEB アプリの入り口となることが体験できました！
+
+## そのほか template ノード例
+
+（まとめ中）
 
 # 質疑応答
 

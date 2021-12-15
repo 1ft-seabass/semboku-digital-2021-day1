@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"></head>
         <meta property="og:type" content="article">
-        <meta property="og:url" content="05-try-flow-changing.html">
+        <meta property="og:url" content="03-01-enebular-hello-world.html">
         <meta property="og:image" content="https://i.gyazo.com/d7e9a95785f39c62aae95a7a4112710a.png">
         <meta property="og:title" content="仙北市デジタル人材育成講座">
         <meta property="og:description" content="仙北市デジタル人材育成講座の 1 日目資料">
         <meta property="og:locale" content="ja">
-        <title>フローの仕組みを理解して少し変えてみよう · 仙北市デジタル人材育成講座</title>
+        <title>enebular から WEB に Hello World しよう · 仙北市デジタル人材育成講座</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.23">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="99-discussion.html" />
+    <link rel="next" href="03-02-enebular-dashboard.html" />
     
     
-    <link rel="prev" href="04-02-location-app.html" />
+    <link rel="prev" href="03-00-enebular-getting-started.html" />
     
 
     </head>
@@ -179,7 +179,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.2.1" data-path="03-01-enebular-hello-world.html">
+        <li class="chapter active" data-level="1.4.2.1" data-path="03-01-enebular-hello-world.html">
             
                 <a href="03-01-enebular-hello-world.html">
             
@@ -274,7 +274,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.2" data-path="05-try-flow-changing.html">
+        <li class="chapter " data-level="1.5.2" data-path="05-try-flow-changing.html">
             
                 <a href="05-try-flow-changing.html">
             
@@ -335,7 +335,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >フローの仕組みを理解して少し変えてみよう</a>
+        <a href="." >enebular から WEB に Hello World しよう</a>
     </h1>
 </div>
 
@@ -350,15 +350,81 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="フローの仕組みを理解して少し変えてみよう"><a name="フローの仕組みを理解して少し変えてみよう" class="plugin-anchor" href="#フローの仕組みを理解して少し変えてみよう"><i class="fa fa-link" aria-hidden="true"></i></a>フローの仕組みを理解して少し変えてみよう</h1>
+                                <h1 id="enebular-から-web-に-hello-world-しよう"><a name="enebular-から-web-に-hello-world-しよう" class="plugin-anchor" href="#enebular-から-web-に-hello-world-しよう"><i class="fa fa-link" aria-hidden="true"></i></a>enebular から WEB に Hello World しよう</h1>
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="このページの概要"><a name="このページの概要" class="plugin-anchor" href="#このページの概要"><i class="fa fa-link" aria-hidden="true"></i></a>このページの概要</h2>
-<p><img src="https://i.gyazo.com/012495d03dfe39bc09cb4d2f4f02581b.png" alt="image"></p>
+<p>enebular および Node-RED の操作がつかめてきたところで、enebular から WEB に Hello World してみます。</p>
+<h2 id="前回のフローを閉じる"><a name="前回のフローを閉じる" class="plugin-anchor" href="#前回のフローを閉じる"><i class="fa fa-link" aria-hidden="true"></i></a>前回のフローを閉じる</h2>
+<p>enebular のエディタは一つだけ開いて編集することができます。つまり、前回のフローを閉じてから、今回のフローを作っていきます。</p>
+<p><img src="https://i.gyazo.com/5dd595f5123837c177af62a0b1f2045b.png" alt="image"></p>
+<p>いま、Chrome ブラウザのタブで前回のフローが表示されています。</p>
+<p><img src="https://i.gyazo.com/40dd653508a959f24323f56815997101.png" alt="image"></p>
+<p>タブを閉じましょう。</p>
+<p><img src="https://i.gyazo.com/3967b715fd9a451ba57e3f65831ff125.png" alt="image"></p>
+<p>このような「このサイトを離れますか？」というウィンドウが表示されるので、このページを離れるボタンをクリックして閉じます。</p>
+<h2 id="フローの詳細に戻る"><a name="フローの詳細に戻る" class="plugin-anchor" href="#フローの詳細に戻る"><i class="fa fa-link" aria-hidden="true"></i></a>フローの詳細に戻る</h2>
+<p><img src="https://i.gyazo.com/ed472d20b0215523922cb02793bbafaa.png" alt="image"></p>
+<p>フローのタブを閉じると、Edit ボタンをクリックする前のフローの詳細が別タブに残っていて表示されているはずです。</p>
+<h2 id="プロジェクトに戻る"><a name="プロジェクトに戻る" class="plugin-anchor" href="#プロジェクトに戻る"><i class="fa fa-link" aria-hidden="true"></i></a>プロジェクトに戻る</h2>
+<p><img src="https://i.gyazo.com/af42a9ab00382c6f93557579b8d03b92.png" alt="image"></p>
+<p>左上のナビゲーションからプロジェクト名をクリックしてプロジェクトに戻ります。</p>
+<h2 id="assets-の作成"><a name="assets-の作成" class="plugin-anchor" href="#assets-の作成"><i class="fa fa-link" aria-hidden="true"></i></a>Assets の作成</h2>
+<p><img src="https://i.gyazo.com/52cf959b332bb1040e3c1cce6634cdeb.png" alt="image"></p>
+<p>右下の + ボタンをクリックすると Asset を作成します。</p>
+<p><img src="https://i.gyazo.com/27bc1b763fdab6c5584722338cb007a4.png" alt="image"></p>
+<p>以前の章で学んだ Asset の作成を参考に Flow のタイトル <code>flow-semboku-hello-world-web</code> にしてフローを作成しましょう。</p>
+<p>作成が完了し、Flow の詳細ページに移動します。</p>
+<h2 id="フローエディタを表示する"><a name="フローエディタを表示する" class="plugin-anchor" href="#フローエディタを表示する"><i class="fa fa-link" aria-hidden="true"></i></a>フローエディタを表示する</h2>
+<p><img src="https://i.gyazo.com/4fa8dd59baa8ea3922b76ff2cc9405d3.png" alt="image"></p>
+<p>Edit ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/98736f6f6724b9e6caf6faee92380646.png" alt="image"></p>
+<p>左上に Loading がでたら、しばらく待ちます。</p>
+<h2 id="http-in-ノードを配置してプロパティ設定"><a name="http-in-ノードを配置してプロパティ設定" class="plugin-anchor" href="#http-in-ノードを配置してプロパティ設定"><i class="fa fa-link" aria-hidden="true"></i></a>http in ノードを配置してプロパティ設定</h2>
+<p><img src="https://i.gyazo.com/75b20fcc55290b1db7856639eb3ef2de.png" alt="image"></p>
+<p>パレットから HTTP の入り口をつくる http in ノードを探します。</p>
+<p><img src="https://i.gyazo.com/988036239c5ea1de5dcdbc1d97d1e68b.png" alt="image"></p>
+<p>ワークスペースに配置します。</p>
+<p><img src="https://i.gyazo.com/d32a1c1f9468610a9418b2a0b3e21947.png" alt="image"></p>
+<p>http in ノードをダブルクリックしてプロパティを表示して、今回はいま表示している enebular エディタのフローの <code>/hello</code> という HTTP の入り口をつくる設定します。</p>
+<p>完了ボタンをクリックしてワークスペースに戻ります。</p>
+<h2 id="template-ノードを配置してプロパティ設定"><a name="template-ノードを配置してプロパティ設定" class="plugin-anchor" href="#template-ノードを配置してプロパティ設定"><i class="fa fa-link" aria-hidden="true"></i></a>template ノードを配置してプロパティ設定</h2>
+<p><img src="https://i.gyazo.com/5255bc836d7361771ad3d8f74995e5c8.png" alt="image"></p>
+<p>パレットから template ノードを探してワークスペースに配置します。</p>
+<p><img src="https://i.gyazo.com/d74f53b7cc594d0d34e6f6a1c3077305.png" alt="image"></p>
+<p>このように http in ノードの隣に配置してワイヤーでつなぎます。</p>
+<p><img src="https://i.gyazo.com/cec1c5a2f6502bd8af1b33e26c840bc4.png" alt="image"></p>
+<p>template ノードをダブルクリックしてプロパティをプロパティを表示します。</p>
+<p><img src="https://i.gyazo.com/28531568e254337e0a51aff69b7c2150.png" alt="image"></p>
+<p>テンプレートの項目に元々書いてある内容を上書きして <code>Hello World!</code> と入力して完了ボタンをクリックします。</p>
+<h2 id="http-response-ノードを配置する"><a name="http-response-ノードを配置する" class="plugin-anchor" href="#http-response-ノードを配置する"><i class="fa fa-link" aria-hidden="true"></i></a>http response ノードを配置する</h2>
+<p><img src="https://i.gyazo.com/d03b6c8867ffad9aead817cb0043fbab.png" alt="image"></p>
+<p>パレットから http response ノードを探してワークスペースに配置します。</p>
+<p><img src="https://i.gyazo.com/77a85016e2623240f3dd9221db04a470.png" alt="image"></p>
+<p>このように template ノードの隣に配置してワイヤーでつなぎます。</p>
+<p><img src="https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png" alt="image"></p>
+<p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
+<h2 id="enebular-エディタのフローの-url-にアクセスする"><a name="enebular-エディタのフローの-url-にアクセスする" class="plugin-anchor" href="#enebular-エディタのフローの-url-にアクセスする"><i class="fa fa-link" aria-hidden="true"></i></a>enebular エディタのフローの URL にアクセスする</h2>
+<p>この入り口は <code>enebular エディタのフローの URL</code> + <code>/hello</code> でアクセスできます。</p>
+<p><img src="https://i.gyazo.com/bb8451a3c03d9b0ba7b228e41364e924.png" alt="image"></p>
+<p>いま表示している enebular エディタのフローの URL はこちらの i アイコン <img src="https://i.gyazo.com/844f1e2731ba35ff5f170dae3afad53a.png" alt="image"> にマウスを乗せると確認できます。</p>
+<p><img src="https://i.gyazo.com/c73da781b8181d4f4682750573264b60.png" alt="image"></p>
+<p>マウスを乗せて確認して、<code>https://*******************.herokuapp.com/</code> の部分をクリックしましょう。セッションの残り時間も書いてありますね。</p>
+<p><img src="https://i.gyazo.com/08def14e591a3d52c5e7ba4aee67aade.png" alt="image"></p>
+<p>まだ <code>/hello</code> にはアクセスしてないので <code>Cannot GET /</code> で大丈夫です。</p>
+<h2 id="さらに-hello-にアクセスしてみる"><a name="さらに-hello-にアクセスしてみる" class="plugin-anchor" href="#さらに-hello-にアクセスしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>さらに <code>/hello</code> にアクセスしてみる</h2>
+<p><code>先ほどメモしたenebular エディタのフローの URL</code> に <code>/hello</code> を加えて、今回の仕組みにアクセスしてみましょう。</p>
+<p><img src="https://i.gyazo.com/93767c7245b176f3d15fdbac509c3f44.png" alt="image"></p>
+<p>アドレスバーに <code>/hello</code> を加えて Enter キーを押してアクセスします。</p>
+<p><img src="https://i.gyazo.com/99ef30728044d3c1a95c7c049a859626.png" alt="image"></p>
+<p>Hello World! と表示されました！</p>
+<p>これで enebular でつくった仕組みが WEB に表示できることが分かり、WEB アプリの入り口となることが体験できました！</p>
+<h2 id="そのほか-template-ノード例"><a name="そのほか-template-ノード例" class="plugin-anchor" href="#そのほか-template-ノード例"><i class="fa fa-link" aria-hidden="true"></i></a>そのほか template ノード例</h2>
+<p>（まとめ中）</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
 <p><img src="https://i.gyazo.com/aba8ccd625e7320883851b71ebd0caf2.png" alt="image"></p>
 <p>ここまでで質問があればどうぞ！</p>
 <h1 id="次にすすみましょう"><a name="次にすすみましょう" class="plugin-anchor" href="#次にすすみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>次にすすみましょう</h1>
-<p>左のナビゲーションから「ふりかえり＆質疑応答」にすすみましょう。</p>
+<p>左のナビゲーションから「enebular のダッシュボードを動かそう」にすすみましょう。</p>
 
                                 
                                 </section>
@@ -386,12 +452,12 @@
 
             
                 
-                <a href="04-02-location-app.html" class="navigation navigation-prev " aria-label="Previous page: 位置情報メモ投稿アプリフロー体験">
+                <a href="03-00-enebular-getting-started.html" class="navigation navigation-prev " aria-label="Previous page: enebular を動かそう">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="99-discussion.html" class="navigation navigation-next " aria-label="Next page: ふりかえり＆質疑応答">
+                <a href="03-02-enebular-dashboard.html" class="navigation navigation-next " aria-label="Next page: enebular のダッシュボードを動かそう">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -402,7 +468,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"フローの仕組みを理解して少し変えてみよう","level":"1.5.2","depth":2,"next":{"title":"ふりかえり＆質疑応答","level":"1.6","depth":1,"path":"99-discussion.md","ref":"99-discussion.md","articles":[]},"previous":{"title":"位置情報メモ投稿アプリフロー体験","level":"1.5.1.2","depth":3,"path":"04-02-location-app.md","ref":"04-02-location-app.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"05-try-flow-changing.md","mtime":"2021-12-10T06:16:06.071Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-15T14:04:50.561Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"next":{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]},"previous":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"path":"03-00-enebular-getting-started.md","ref":"03-00-enebular-getting-started.md","articles":[{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-01-enebular-hello-world.md","mtime":"2021-12-15T13:13:09.221Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-15T14:04:50.561Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
