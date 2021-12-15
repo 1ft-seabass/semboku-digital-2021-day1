@@ -161,23 +161,25 @@ Node-RED はサーバーとフロントエンドの両方を作れる仕組み�
 
 ## inject ノードと debug ノードをつなげていく
 
-![image](https://i.gyazo.com/69d9424ea7db4779794c1d39e1d0a44f.png)
+inject ノードと debug ノードをつなげていきましょう。
+
+![image](https://i.gyazo.com/15073084677b7d24a87128dec2c549ff.png)
 
 inject ノードをワークスペースにドラックアンドドロップします。
 
-![image](https://i.gyazo.com/4ab5cd15ee540f8b2181cafc29cf9377.png)
+![image](https://i.gyazo.com/f24c1ed2de773f76ec79a3e613e3c521.png)
 
 inject ノードの横にdebugノードをドラックアンドドロップします。
 
-![image](https://i.gyazo.com/b8eb34fb3296018ddae614e01bd47a50.png)
+![image](https://i.gyazo.com/34d4e6ebee0135e0fa73c94418c0edb0.png)
 
 inject ノードと debug ノードをつなぎます。つなぐものはワイヤーといいます。
 
-![image](https://i.gyazo.com/58de57346d51b7620c32562f9c8690bf.png)
+![image](https://i.gyazo.com/4242b9d9fbe5a46fae8b6f9755292b70.png)
 
 デプロイボタンをクリックすると今作ったものが反映されます。
 
-![image](https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png)
+![image](https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png)
 
 ## 動かしてみる
 
@@ -197,35 +199,25 @@ injectノードの横のボタンを押すとdebugノードにデータが送ら
 
 injectノードをダブルクリックしてデータを変更しましょう。
 
-![image](https://i.gyazo.com/05dc870ae85c44d1be74d97b1a474b41.png)
+![image](https://i.gyazo.com/136c890ce0a675e988134848a5919348.png)
 
 ノードはダブルクリックすると細かな設定ができます。
 
-![image](https://i.gyazo.com/6416484adf11e2410f0e5e1042da7f53.png)
+![image](https://i.gyazo.com/37981a8011fdf55554734fe8fd89dddc.png)
 
 ペイロードがデータの内容です。数値に変更しましょう。
 
-![image](https://i.gyazo.com/290cce9c52a9736289eb3317a8f18f36.png)
+![image](https://i.gyazo.com/165103700f6305ca7d0ab51194b89c0d.png)
 
 50に設定して完了をクリックします。
 
-![image](https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png)
+![image](https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png)
 
 デプロイボタンをクリックすると今作ったものが反映されます。
 
-![image](https://i.gyazo.com/5ce3b9ec73285db932270eabfab4ac63.png)
+![image](https://i.gyazo.com/2dd239ef682f7c5ad26b72c41d94b513.png)
 
-動かして、inject ノードから送られるデータが 50 の数値になっているか確認します。
-
-## Hello World を表示してみよう
-
-![image](https://i.gyazo.com/e34659c975de64d07ec124b7c178ea02.jpg)
-
-> フローを編集し、プログラミングで定番のファースト ステップ、「Hello World」の文字列を開発環境で出力するところまでを解説します。3つのノードと、正しく組み合わせたかどうかを確認するデバッグのノードの4つのシンプルなフローを作ってみましょう。
-
-## ダッシュボードを表示しよう
-
-（作成中）
+動かして、inject ノードから送られるデータが、サイドバーの debug タブで 50 の数値になっているか確認します。
 
 # 質疑応答
 
@@ -235,5 +227,5 @@ injectノードをダブルクリックしてデータを変更しましょう�
 
 # 次にすすみましょう
 
-左のナビゲーションから「Discover Flow で WEB アプリ体験」にすすみましょう。
+左のナビゲーションから「enebular から WEB に Hello World」にすすみましょう。
 
