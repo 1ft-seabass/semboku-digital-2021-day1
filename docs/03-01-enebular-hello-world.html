@@ -354,6 +354,9 @@
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="このページの概要"><a name="このページの概要" class="plugin-anchor" href="#このページの概要"><i class="fa fa-link" aria-hidden="true"></i></a>このページの概要</h2>
 <p>enebular および Node-RED の操作がつかめてきたところで、enebular から WEB に Hello World してみます。</p>
+<p><img src="https://i.gyazo.com/9ba52abefc2a1ead6d834379103dcc46.png" alt="image"></p>
+<p>enebular はいま作業している仕組みをデプロイすると WEB サーバーに反映されます。</p>
+<p>今回は WEB からアクセスできる <code>/hello</code> という窓口を用意して、そこに PC やスマートフォンでアクセスすると <code>Hello World!</code> という文字を返してブラウザに表示する仕組みをつくります。</p>
 <h2 id="前回のフローを閉じる"><a name="前回のフローを閉じる" class="plugin-anchor" href="#前回のフローを閉じる"><i class="fa fa-link" aria-hidden="true"></i></a>前回のフローを閉じる</h2>
 <p>enebular のエディタは一つだけ開いて編集することができます。つまり、前回のフローを閉じてから、今回のフローを作っていきます。</p>
 <p><img src="https://i.gyazo.com/5dd595f5123837c177af62a0b1f2045b.png" alt="image"></p>
@@ -403,7 +406,7 @@
 <p>このように template ノードの隣に配置してワイヤーでつなぎます。</p>
 <p><img src="https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png" alt="image"></p>
 <p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
-<h2 id="enebular-エディタのフローの-url-にアクセスする"><a name="enebular-エディタのフローの-url-にアクセスする" class="plugin-anchor" href="#enebular-エディタのフローの-url-にアクセスする"><i class="fa fa-link" aria-hidden="true"></i></a>enebular エディタのフローの URL にアクセスする</h2>
+<h2 id="pc-から-enebular-エディタのフローの-url-にアクセスする"><a name="pc-から-enebular-エディタのフローの-url-にアクセスする" class="plugin-anchor" href="#pc-から-enebular-エディタのフローの-url-にアクセスする"><i class="fa fa-link" aria-hidden="true"></i></a>PC から enebular エディタのフローの URL にアクセスする</h2>
 <p>この入り口は <code>enebular エディタのフローの URL</code> + <code>/hello</code> でアクセスできます。</p>
 <p><img src="https://i.gyazo.com/bb8451a3c03d9b0ba7b228e41364e924.png" alt="image"></p>
 <p>いま表示している enebular エディタのフローの URL はこちらの i アイコン <img src="https://i.gyazo.com/844f1e2731ba35ff5f170dae3afad53a.png" alt="image"> にマウスを乗せると確認できます。</p>
@@ -418,6 +421,22 @@
 <p><img src="https://i.gyazo.com/99ef30728044d3c1a95c7c049a859626.png" alt="image"></p>
 <p>Hello World! と表示されました！</p>
 <p>これで enebular でつくった仕組みが WEB に表示できることが分かり、WEB アプリの入り口となることが体験できました！</p>
+<h2 id="スマートフォンでも見てみましょう"><a name="スマートフォンでも見てみましょう" class="plugin-anchor" href="#スマートフォンでも見てみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>スマートフォンでも見てみましょう</h2>
+<p>今回の場合、PC から見てもスマートフォンから見ても同じように見えますが、ここで PC で見ているものを Chrome から QR コードに表示して、スマートフォンの LINE アプリの QR コード読み取り機能を利用して スマートフォンのブラウザに表示してみましょう。</p>
+<p><img src="https://i.gyazo.com/28d68e5b0c12f7b97180729fa674c0e9.png" alt="image"></p>
+<p><code>/hello</code> にアクセスできた Chrome ブラウザタブのアドレスバーの横にある、こちらのアイコンをクリックします。</p>
+<p><img src="https://i.gyazo.com/b959d0b62dbccda75df08df84a5bd727.png" alt="image"></p>
+<p>色々な機能が表示されるので QR コードをクリックします。</p>
+<p><img src="https://i.gyazo.com/7e334699ec1923afc8541e3101d27019.png" alt="image"></p>
+<p>かわいい QR コードが表示されるので、このままにしておきましょう。</p>
+<p><img src="https://i.gyazo.com/8f6219d5b0cf3827e144667837bf8c86.png" alt="image"></p>
+<p>スマートフォンの LINE アプリを起動して、トークのリスト画面のこちらのアイコンをクリックしてカメラを起動します。（こちらは Android の LINE アプリの画面です。もしかすると iPhone のアプリ画面では少し違うかもしれないですが、読み替えてみてください。）</p>
+<p><img src="https://i.gyazo.com/d765715ded01bef52c019d8e00a83831.png" alt="image"></p>
+<p>カメラが起動したら QR コードの読み取りになっているかを確認して、さきほど QR コードを読み取ってみましょう。</p>
+<p><img src="https://i.gyazo.com/46645973dd77cfdcb462584c629d1e8f.jpg" alt="image"></p>
+<p>うまく読み込めると URL の候補が表示されるのでクリックします。</p>
+<p><img src="https://i.gyazo.com/096a1d2aa2a0dd4fb43dc48b559cfd20.png" alt="image"></p>
+<p>LINE 内のブラウザで表示されて確認することができます！</p>
 <h2 id="そのほか-template-ノード例"><a name="そのほか-template-ノード例" class="plugin-anchor" href="#そのほか-template-ノード例"><i class="fa fa-link" aria-hidden="true"></i></a>そのほか template ノード例</h2>
 <p>（まとめ中）</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
@@ -468,7 +487,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"next":{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]},"previous":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"path":"03-00-enebular-getting-started.md","ref":"03-00-enebular-getting-started.md","articles":[{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-01-enebular-hello-world.md","mtime":"2021-12-15T13:13:09.221Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-15T14:04:50.561Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"next":{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]},"previous":{"title":"enebular を動かそう","level":"1.4.2","depth":2,"path":"03-00-enebular-getting-started.md","ref":"03-00-enebular-getting-started.md","articles":[{"title":"enebular から WEB に Hello World しよう","level":"1.4.2.1","depth":3,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},{"title":"enebular のダッシュボードを動かそう","level":"1.4.2.2","depth":3,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-01-enebular-hello-world.md","mtime":"2021-12-16T01:47:19.135Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-16T01:47:59.307Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
