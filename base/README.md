@@ -85,7 +85,48 @@
 
 ## 次回の講座について
 
+![image](https://i.gyazo.com/78ae1e4baea1f4923f77b4e894506f83.png)
+
 次回は 来年 1 月 8 日（土）13:00 ～ 16:00 に行われます。
+
+## 1 回目と 2 回目の間の自主学習について
+
+![image](https://i.gyazo.com/15e3ed0d553c8d4df0c9e51fde2a889a.png)
+
+1 回目と 2 回目の間の自主学習パートがあります。
+
+![image](https://i.gyazo.com/f9cdb4dc85d45f01c48e97b299c12714.jpg)
+
+> [enebular developers ポータル](https://blog.enebular.com/enebular/enebular_developers_portal/)
+
+enebular の自主学習には、まず、enebular developers ポータルがおススメです。
+
+![image](https://i.gyazo.com/88bc5a0cd4d8794771a8d0693f0b4d0f.jpg)
+
+そして、[enebular blog](https://blog.enebular.com/) もおススメです。こちらは、より実践的な内容もあり、ことはじめ的な内容もあり、幅広い情報があります。
+
+私の書いた記事もあり、Discover Flow を使ってすぐに試せるとっつきやすいもので、以下のようなものがあります。
+
+- [スプレッドシートのようにデータ管理できる Airtable を Node\-RED ノードでセットアップしてみる \| enebular blog](https://blog.enebular.com/samples/use-airtable-as-spreadsheet1/)
+- [柴犬 API につないで画像を表示する仕組みを試して学ぼう 前編 \| enebular blog](https://blog.enebular.com/api/shiba-inu-api-1/)
+- [柴犬 API につないで画像を表示する仕組みを試して学ぼう 後編 \| enebular blog](https://blog.enebular.com/api/https-blog-enebular-com-api-shiba-inu-api-2/)
+- [enebular で使える JSONata 式の便利 Tips \| enebular blog](https://blog.enebular.com/node-red/jsonata-tips01/)
+- [enebularのNode\-RED ダッシュボードでカッコいいゲージnode\-red\-contrib\-ui\-artless\-gaugeを使ってみる \| enebular blog](https://blog.enebular.com/node-red/node-red-artless-gauge/)
+- [オンラインで参加者のリアクションを集めるツールをサッと作ってみよう（前編） \| enebular blog](https://blog.enebular.com/samples/online-reaction-01/)
+- [オンラインで参加者のリアクションを集めるツールをサッと作ってみよう（後編） \| enebular blog](https://blog.enebular.com/samples/online-reaction-02/)
+
+他にも面白い Tips があるのでぜひのぞいてみてください！
+
+また、enebular のエディタとして使われている Node-RED の情報源としては以下もおススメです。
+
+- [Qiita の node\-red タグ](https://qiita.com/tags/node-red)
+- [ドキュメント : Node\-RED日本ユーザ会](https://nodered.jp/docs/)
+
+また、他の情報もあれば Slack に共有してまいります。
+
+なお、自主学習サポートとして田中講師も引き続き Slack で、できるかぎりのサポート予定です。気軽に聞いてくださいね。
+
+詳しくは、のちほど、運営の方から Slack にて詳細をお伝えします。
 
 ## お疲れ様でした！
 
