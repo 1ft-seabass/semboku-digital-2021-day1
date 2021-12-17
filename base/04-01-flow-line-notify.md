@@ -106,11 +106,92 @@ LINE Nofify フローに入力したメッセージが送られて LINE の今�
 
 こちらの仕組みを説明します。
 
-## 今回のまとめ
+## フローの仕組みを少し変えてみましょう
 
-（作成中）
+![image](https://i.gyazo.com/c41ee556554ede26d1155cb3156591c6.png)
 
-□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■□□□□□□□□□■
+## ダッシュボードのカラーを LINE のようなカラーに変えてみる
+
+![image](https://i.gyazo.com/a98a01c8bcd37ee36b972fc473b653b6.png)
+
+サイドバーからダッシュボードの設定タブを表示します。
+
+![image](https://i.gyazo.com/3c9564924d742f27d9f648741385d519.png)
+
+ダッシュボードの設定タブが表示されたらテーマのタブをクリックしましょう。
+
+![image](https://i.gyazo.com/f27b086593b8f56fbb1882d15ef8fc2d.png)
+
+基本設定の色を設定します。
+
+![image](https://i.gyazo.com/1832443125dc3b8ee3e4f3c1aef415e5.png)
+
+色の設定はこのようになっています。
+
+![image](https://i.gyazo.com/9ad4569d5f9bee42ccc286dabab7eb85.png)
+
+[LINE APP ICON GUIDELINE](https://line.me/ja/logo) のロゴのガイドラインからLINE のカラーコードを見てみると `#06c755` です。RGB 値でいうと `R 6, G 199, B 85` です。
+
+![image](https://i.gyazo.com/bba94631fb00ffb9f83804e5fff9cf99.png)
+
+デプロイボタンをクリックして、今回の変更をフローに反映します。
+
+![image](https://i.gyazo.com/310c7dc76fff5f31c3ce26490277f551.png)
+
+すぐに反映されます。
+
+このように自分好みにカラーを変更することができます。スタイルをカスタムに変更するとより細かく変更できますが、設定項目が多いので、少しずつ試しながら進めましょう。
+
+## 送る文言を変えてみる
+
+![image](https://i.gyazo.com/2e2f3453ee934f50852960aab89d7033.png)
+
+送る文言を決めている change ノードをダブルクリックしてプロパティを表示します。
+
+![image](https://i.gyazo.com/0e967b7c0b9afa4e100b0b1865d76ad4.png)
+
+表示したら対象の値の設定を `JSONata式` に変更します。
+
+JSONata は、JSONデータの軽量クエリおよび変換言語です。簡単な計算や文字列処理をはじめ、複雑な配列やオブジェクトの操作まで色々なことができます。
+
+より詳しい使い方が気になる方は、以下を参考にしてください。
+
+- [JSONata の言語ガイドを訳してみた \- Qiita](https://qiita.com/yamachan360/items/91805334890d18ef6e23)
+- （英語）[JSONata Documentation · JSONata](http://docs.jsonata.org/overview.html)
+
+さて、
+
+![image](https://i.gyazo.com/01f626e42fe04a0b03c49a845007f315.png)
+
+これを使って LINE Notify に送る文言を変更してみましょう。
+
+![image](https://i.gyazo.com/2c22c9a1cc63e19588e5caa695ce5dc0.png)
+
+こちらのボタンをクリックして、詳細表示にします。
+
+![image](https://i.gyazo.com/84fe605dd51c91f4fb1252c90e93ff2f.png)
+
+JSONata が詳細に設定できるウィンドウが表示されました。
+
+![image](https://i.gyazo.com/1581910d4448a6833c387afb363fa5f5.png)
+
+`"今回メッセージが送信された内容は「" & payload.memo & "」です！"` という内容に変更したら、完了ボタンをクリックします。
+
+![image](https://i.gyazo.com/6a01bb28216b8b1b43cbed19e692c450.png)
+
+反映できたので、こちらも完了ボタンをクリックします。
+
+![image](https://i.gyazo.com/bba94631fb00ffb9f83804e5fff9cf99.png)
+
+デプロイボタンをクリックして、今回の変更をフローに反映します。
+
+![image](https://i.gyazo.com/5da7e73976654ed02368f7a0a29826f0.png)
+
+反映したら、ダッシュボードからまたメッセージを送ってみましょう！
+
+![image](https://i.gyazo.com/ca1d13a00241448eb55a4f29aa4c7597.png)
+
+送る内容を変更することができました。
 
 # 質疑応答
 

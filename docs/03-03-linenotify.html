@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"></head>
         <meta property="og:type" content="article">
-        <meta property="og:url" content="03-02-enebular-dashboard.html">
+        <meta property="og:url" content="03-03-linenotify.html">
         <meta property="og:image" content="https://i.gyazo.com/d7e9a95785f39c62aae95a7a4112710a.png">
         <meta property="og:title" content="仙北市デジタル人材育成講座">
         <meta property="og:description" content="仙北市デジタル人材育成講座の 1 日目資料">
         <meta property="og:locale" content="ja">
-        <title>enebular のダッシュボードを動かそう · 仙北市デジタル人材育成講座</title>
+        <title>LINE Notify にメッセージを送ろう · 仙北市デジタル人材育成講座</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.23">
@@ -67,10 +67,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="03-03-linenotify.html" />
     
-    
-    <link rel="prev" href="03-01-enebular-hello-world.html" />
+    <link rel="prev" href="03-02-enebular-dashboard.html" />
     
 
     </head>
@@ -191,7 +189,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.4" data-path="03-02-enebular-dashboard.html">
+        <li class="chapter " data-level="1.4.4" data-path="03-02-enebular-dashboard.html">
             
                 <a href="03-02-enebular-dashboard.html">
             
@@ -204,7 +202,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="03-03-linenotify.html">
+        <li class="chapter active" data-level="1.4.5" data-path="03-03-linenotify.html">
             
                 <a href="03-03-linenotify.html">
             
@@ -323,7 +321,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >enebular のダッシュボードを動かそう</a>
+        <a href="." >LINE Notify にメッセージを送ろう</a>
     </h1>
 </div>
 
@@ -338,20 +336,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="enebular-のダッシュボードを動かそう"><a name="enebular-のダッシュボードを動かそう" class="plugin-anchor" href="#enebular-のダッシュボードを動かそう"><i class="fa fa-link" aria-hidden="true"></i></a>enebular のダッシュボードを動かそう</h1>
+                                <h1 id="line-notify-にメッセージを送ろう"><a name="line-notify-にメッセージを送ろう" class="plugin-anchor" href="#line-notify-にメッセージを送ろう"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Notify にメッセージを送ろう</h1>
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="このページの概要"><a name="このページの概要" class="plugin-anchor" href="#このページの概要"><i class="fa fa-link" aria-hidden="true"></i></a>このページの概要</h2>
-<p>enebular でより手軽に WEB アプリのパーツが作れるダッシュボードノードを使ってボタンを押したら Node-RED で値が確認できる仕組みを体験します。</p>
-<h2 id="ダッシュボードノード"><a name="ダッシュボードノード" class="plugin-anchor" href="#ダッシュボードノード"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードノード</h2>
-<p><img src="https://i.gyazo.com/b028724a2564aecb8641d17e971059cf.png" alt="image"></p>
-<p>引用: <a href="https://flows.nodered.org/node/node-red-dashboard" target="_blank">node-red-dashboard (node) - Node-RED</a></p>
-<p>ダッシュボードノードは、フォーム入力・テキスト入力・ボタンのようなユーザーから入力を待つような UI パーツをはじめ、折れ線グラフや円グラフのようなデータを可視化するパーツが扱えるノードです。</p>
-<p>また、レイアウト機能も優れており直感的に配置することができます。PC やスマートフォンに応じた表示（レスポンシブレイアウト）も対応しています。</p>
-<p><img src="https://i.gyazo.com/2f3a06a2af4566361954d4499551ba00.png" alt="image"></p>
-<p>パレットには、このようなノードが揃っています。</p>
-<p>もちろん、さきほどの http in + template + http response の仕組みでも HTML や CSS といった WEB 技術を駆使して、イチから画面や機能を作ることも可能ですが、どうしても時間がかかります。</p>
-<p>enebular および Node-RED では、このダッシュボードノードを使って WEB アプリにおけるユーザー画面を作っていくことができるので、より素早く作りたいものを作って試すことができます。</p>
-<p>早速、試してみましょう。</p>
+<p>enebular から LINE Notify にメッセージを送ります。LINE Notify ノードは enebular には事前にインストールされていないため、ノードの追加からインストールしてノードを使えることも体験します。</p>
+<h2 id="line-notify-とは"><a name="line-notify-とは" class="plugin-anchor" href="#line-notify-とは"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Notify とは</h2>
+<p><img src="https://i.gyazo.com/e3d3568d86c27b2ba377aa3726106e8d.png" alt="image"></p>
+<p><a href="https://notify-bot.line.me/ja/" target="_blank">LINE Notify</a></p>
+<blockquote>
+<p>Webサービスからの通知をLINEで受信
+Webサービスと連携すると、LINEが提供する公式アカウント&quot;LINE Notify&quot;から通知が届きます。
+複数のサービスと連携でき、グループでも通知を受信することが可能です。</p>
+</blockquote>
+<p><img src="https://i.gyazo.com/a2776766858a54cd0ae3ccf0941b1d97.png" alt="image"></p>
+<p>自分の LINE に通知としてメッセージを受け取ることができる仕組みです。</p>
+<ul>
+<li>自分から見に行かなくてもメッセージで知らせてくれる仕組み</li>
+<li>複数人に一斉にメッセージを受け取る仕組み</li>
+<li>何かしらの情報をまとめて知らせてくれる仕組み</li>
+</ul>
+<p>といったものを作ることができます。</p>
+<p>自分たちが設定した情報だけを手軽に LINE ユーザーに配信できるので、WEB アプリの仕組みと相性がよく「こういう通知内容は実際役に立つだろうか？」といった形で、自分たちの考えた発想を試しやすいです。</p>
+<p>また、そういったメッセージを受け付ける部分を LINE に任せることで、LINE アプリの使い慣れた洗練されたレイアウトで、すぐにメッセージを表示できることも良い点です。</p>
+<p>もし、このレベルに使いやすい仕組みを自分でイチからつくるとなると、WEB サーバーの知識・HTML/CSS/JavaScript といった WEB 表示の知識・セキュリティへの配慮・多くのユーザーがいる状況などなど整えるべきことが数多くあります。「こういう通知内容は実際役に立つだろうか？」というシンプルな試行錯誤をするまでに、たくさんの時間がかかります。</p>
+<p>このあたりを、LINE Nofity および LINE アプリで、すぐに試せるというのは、自分たちの構想を試して良くしていくときには強い味方になります！</p>
+<p>では、早速、enebular から LINE Notify にメッセージを送ってみましょう。</p>
 <h2 id="準備から-assets-の作成"><a name="準備から-assets-の作成" class="plugin-anchor" href="#準備から-assets-の作成"><i class="fa fa-link" aria-hidden="true"></i></a>準備から Assets の作成</h2>
 <p><a href="03-01-enebular-hello-world.html">前の章</a> でお伝えした、</p>
 <ul>
@@ -362,70 +371,66 @@
 <p>まで進めます。</p>
 <p><img src="https://i.gyazo.com/52cf959b332bb1040e3c1cce6634cdeb.png" alt="image"></p>
 <p>右下の + ボタンをクリックすると Asset を作成します。</p>
-<p><img src="https://i.gyazo.com/f4094b88ca7ad33e2f16cb7765f2448c.png" alt="image"></p>
-<p>以前の章で学んだ Asset の作成を参考に Flow のタイトル <code>flow-semboku-dashboard-webapp</code> にしてフローを作成しましょう。</p>
+<p><img src="https://i.gyazo.com/72c4b3513fa324d043db00e2d0eda85c.png" alt="image"></p>
+<p>以前の章で学んだ Asset の作成を参考に Flow のタイトル <code>flow-semboku-linenotify-simple</code> にしてフローを作成しましょう。</p>
 <p>作成が完了し、Flow の詳細ページに移動します。</p>
 <h2 id="フローエディタを表示する"><a name="フローエディタを表示する" class="plugin-anchor" href="#フローエディタを表示する"><i class="fa fa-link" aria-hidden="true"></i></a>フローエディタを表示する</h2>
 <p><img src="https://i.gyazo.com/4fa8dd59baa8ea3922b76ff2cc9405d3.png" alt="image"></p>
 <p>Edit ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/98736f6f6724b9e6caf6faee92380646.png" alt="image"></p>
 <p>左上に Loading がでたら、しばらく待ちます。</p>
-<h2 id="dashboard-button-ノードを配置して設定する"><a name="dashboard-button-ノードを配置して設定する" class="plugin-anchor" href="#dashboard-button-ノードを配置して設定する"><i class="fa fa-link" aria-hidden="true"></i></a>dashboard button ノードを配置して設定する</h2>
-<p><img src="https://i.gyazo.com/93ee99b774fbe8589031e65a30912fdb.png" alt="image"></p>
-<p>パレットからダッシュボードにボタンを作る dashboard button ノードを探して配置します。</p>
-<p><img src="https://i.gyazo.com/c5553a5a37d72d8602ac7e5760d62db1.png" alt="image"></p>
+<h2 id="line-notify-ノード"><a name="line-notify-ノード" class="plugin-anchor" href="#line-notify-ノード"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Notify ノード</h2>
+<p><img src="https://i.gyazo.com/ef7aa63b1f9279306948017a56a8d1ac.png" alt="image"></p>
+<p>enebular および Node-RED では、LINE のメッセージを送るサービスを扱える LINE Notify ノード <a href="https://flows.nodered.org/node/node-red-contrib-line-messaging-api" target="_blank">node-red-contrib-line-messaging-api</a> があります。</p>
+<p>もちろん LINE Notify も、この node-red-contrib-line-messaging-api に含まれています。</p>
+<h2 id="ノードの追加"><a name="ノードの追加" class="plugin-anchor" href="#ノードの追加"><i class="fa fa-link" aria-hidden="true"></i></a>ノードの追加</h2>
+<p><a href="https://nodered.jp/docs/user-guide/runtime/adding-nodes" target="_blank">パレットにノードを追加する : Node-RED日本ユーザ会</a> を参考に今回のフローで LINE Notify ノードをインストールして使えるようにしましょう。</p>
+<p><img src="https://i.gyazo.com/01a2e4abe23999069f59a9592ac9dfb8.png" alt="image"></p>
+<p>右上の <img src="https://i.gyazo.com/f2513e4b439966d15aa0d7c63fc71dd5.png" alt="image"> メニューをクリックします。</p>
+<p><img src="https://i.gyazo.com/152de459bf73ad640bbb5a03b76ac4e5.png" alt="image"></p>
+<p>パレットの管理をクリックします。</p>
+<p><img src="https://i.gyazo.com/6507f78ec8d4f4a8f4983ad9f1c84970.png" alt="image"></p>
+<p>パレットの管理が表示され、現在のノードタブに現在のインストールされているノードが表示されているので <code>ノードを追加</code> をクリックします。</p>
+<p><img src="https://i.gyazo.com/2ebd3052f1de3180987d580571d97c56.png" alt="image"></p>
+<p>ノードを追加タブが表示されるので、ノードを検索するエリアに <code>node-red-contrib-line-messaging-api</code> と入力して検索します。</p>
+<p><img src="https://i.gyazo.com/d2de9292f0b62f5c7b262817272f1672.png" alt="image"></p>
+<p>ノードを追加をクリックします。</p>
+<p><img src="https://i.gyazo.com/e38e8a102795734c9825de82032b4b36.png" alt="image"></p>
+<p>このような説明がでてくるので追加をクリックしてインストールを開始します。</p>
+<p><img src="https://i.gyazo.com/b618bacabf0462c8a5ed9918b4717a58.png" alt="image"></p>
+<p>インストールを待ちます。</p>
+<p><img src="https://i.gyazo.com/6e49e2c75d6170e7200b2906cdcc209f.png" alt="image"></p>
+<p>このような説明が出ればインストール完了です。閉じるボタンをクリックして、パレットの管理ウィンドウを閉じます。</p>
+<p><img src="https://i.gyazo.com/1a0f3af4b957baeade0711f090ca896a.png" alt="image"></p>
+<p>パレットで今回のノード群がインストールされているか確認します。こちらの Nofity が LINE Notify のノードです。</p>
+<p><img src="https://i.gyazo.com/ba2eb7c97b9d339405e54fae20aeb5ce.png" alt="image"></p>
+<p>このように、ノードの追加機能で enebular で使えるノードを加えることができます。</p>
+<p>Node-RED のサイトにある <a href="https://flows.nodered.org/" target="_blank">ノード検索</a> で多種多様な機能のノードを確認することができ、使いたくなったノードを、さきほどのノードの追加機能で追加することができます。</p>
+<h2 id="line-noftify-ノードを配置して設定する"><a name="line-noftify-ノードを配置して設定する" class="plugin-anchor" href="#line-noftify-ノードを配置して設定する"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Noftify ノードを配置して設定する</h2>
+<p>さて、エディタ画面を見てみましょう。パレットで LINE Notify ノードがあることを確認できました。</p>
+<p><img src="https://i.gyazo.com/1a0f3af4b957baeade0711f090ca896a.png" alt="image"></p>
+<p>パレットからダッシュボードにボタンを作る LINE Noftify ノードを探して配置します。</p>
+<p><img src="https://i.gyazo.com/2e074ae0844e7d5fca33700aee166a65.png" alt="image"></p>
 <p>配置したらダブルクリックしてプロパティを表示します。</p>
-<p><img src="https://i.gyazo.com/7ee0689928abf9e8ba3f6ef6a7113502.png" alt="image"></p>
-<p>プロパティを表示したら、Group の 新規に ui_group を追加... となっていることを確認して、鉛筆ボタンをクリックします。</p>
-<p><img src="https://i.gyazo.com/d76a121af0e1cfd1d58727061501095a.png" alt="image"></p>
-<p>これで、画面表示時の 1 画面の中で区分けされた1単位「グループ」がデフォルトという名前で仮決定されました。</p>
-<p>引き続き進めます。</p>
-<p>タブの 新規に ui_tab を追加... となっていることを確認して、鉛筆ボタンをクリックします。</p>
-<p><img src="https://i.gyazo.com/868e4f80c8a9e22a61f3de1b5925a7a5.png" alt="image"></p>
-<p>これで、画面表示時の 1 画面分の大きな単位となる「タブ」がホームという名前で仮決定されました。</p>
-<p>追加ボタンをクリックして仮決定されていたタブを正式に追加します。</p>
-<p><img src="https://i.gyazo.com/e5151d7a59f3f0724c06cedc35648706.png" alt="image"></p>
-<p>グループの設定画面に戻ってくるので、グループも追加ボタンをクリックして仮決定されていたグループを正式に追加します。</p>
-<p><img src="https://i.gyazo.com/84ed4ae4d446d7036fa50eca628b3a31.png" alt="image"></p>
-<p>button ノードを編集画面まで戻ってくるので、ボタンが押されたときにどういうデータを出すかを決める Payload 項目を設定します。</p>
-<p><img src="https://i.gyazo.com/086cf9257e91a4720bacf07333a54fe6.png" alt="image"></p>
-<p>あいさつのような言葉を入力します。</p>
-<p><img src="https://i.gyazo.com/eceb00886b9b41351c647f227f2b39fb.png" alt="image"></p>
-<p>設定できたら完了ボタンをクリックします。</p>
-<h2 id="dashboard-button-ノードのデータを受け取る-debug-ノードを設定"><a name="dashboard-button-ノードのデータを受け取る-debug-ノードを設定" class="plugin-anchor" href="#dashboard-button-ノードのデータを受け取る-debug-ノードを設定"><i class="fa fa-link" aria-hidden="true"></i></a>dashboard button ノードのデータを受け取る debug ノードを設定</h2>
-<p><img src="https://i.gyazo.com/cbdee93cae3a83830f4e79243782b27d.png" alt="image"></p>
-<p>debug ノードをパレットから配置して、このように dashboard button ノードからつなぎます。</p>
-<p>こうすることで、dashboard button ノードがクリックされたときに、さきほどの Payload 項目で設定した値が送られて debug ノードで確認できます。</p>
+<p><img src="https://i.gyazo.com/1bb814fa2b980dd6778f294f521c541e.png" alt="image"></p>
+<p>LINE Notify AccessToken のテキストエリアに LINE Notify のアクセストークンを入力して、完了ボタンをクリックします。</p>
+<h2 id="line-notify-ノードのデータを送る-inject-ノードを設定"><a name="line-notify-ノードのデータを送る-inject-ノードを設定" class="plugin-anchor" href="#line-notify-ノードのデータを送る-inject-ノードを設定"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Notify ノードのデータを送る inject ノードを設定</h2>
+<p><img src="https://i.gyazo.com/1bafb0a1839662dd65cd660805e273c7.png" alt="image"></p>
+<p>inject ノードをパレットから配置して、このように LINE Notify ノードにつなぎます。</p>
+<p>こうすることで、inject ノードから送られたタイムスタンプが LINE Notify ノードに送られて、実際に LINE アプリの LINE Notify にメッセージが配信されます。</p>
 <p><img src="https://i.gyazo.com/6abc382d3d9875421b4e5640fc703aa6.png" alt="image"></p>
 <p>デプロイボタンをクリックすると今作ったものが反映されます。</p>
-<h2 id="ダッシュボードを表示してみる"><a name="ダッシュボードを表示してみる" class="plugin-anchor" href="#ダッシュボードを表示してみる"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードを表示してみる</h2>
-<p>サイドバーを見てみましょう。</p>
-<p><img src="https://i.gyazo.com/901ecccb7326bf64f3971d2a81f9e1d7.png" alt="image"></p>
-<p>このボタンをクリックするとサイドバーで見ることのできるものが表示されるので、Dashboard をクリックしましょう。</p>
-<p><img src="https://i.gyazo.com/06ae892c6925a1b2284d76a9d36b632d.png" alt="image"></p>
-<p>Dashboard の情報が表示されました。</p>
-<p><img src="https://i.gyazo.com/3706426fa9790e6d23742725330344fd.png" alt="image"></p>
-<p>こちらのボタンをクリックすると、別の Chrome タブでダッシュボードが表示できます。<code>enebular エディタのフローの URL</code> + <code>/ui</code> という URL です。</p>
-<p><img src="https://i.gyazo.com/72447e56c3a104bd40b7929c6bba2b5f.png" alt="image"></p>
-<p>このように、先ほど設定したホームという名前のタブで1画面が構成されていて、デフォルトというグループが真ん中に表示されています。今回の dashboard button ノードは、このタブの中のグループに配置されるよう設定していました。</p>
-<p><img src="https://i.gyazo.com/b444b8ece034d7f67b4711973c342593.png" alt="image"></p>
-<p>ボタンをクリックしてみましょう。</p>
-<p><img src="https://i.gyazo.com/7c5d346e4981653e3d58076c7c26d203.png" alt="image"></p>
-<p>これでデータが送られたはずなのでエディタの Chrome タブに戻ってみます。</p>
-<p><img src="https://i.gyazo.com/a0f8cc607639f114168ed252fc963c62.png" alt="image"></p>
-<p>サイドバーをデバックに戻します。</p>
-<p><img src="https://i.gyazo.com/91636e872cdfbe6cf94651804053d24c.png" alt="image"></p>
-<p>すると dashboard button ノードがクリックされたときに、さきほどの Payload 項目で設定した値が送られて debug ノードで確認できます。</p>
-<h2 id="ダッシュボードノードで手軽に画面が作れる"><a name="ダッシュボードノードで手軽に画面が作れる" class="plugin-anchor" href="#ダッシュボードノードで手軽に画面が作れる"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードノードで手軽に画面が作れる</h2>
-<p><img src="https://i.gyazo.com/b028724a2564aecb8641d17e971059cf.png" alt="image"></p>
-<p>引用: <a href="https://flows.nodered.org/node/node-red-dashboard" target="_blank">node-red-dashboard (node) - Node-RED</a></p>
-<p>このようにダッシュボードノードで手軽に画面が作れましたね。ぜひ、ほかのノードも試してみましょう。</p>
-<p>このあとお伝えする Discover Flow でもダッシュボードノードの利用例が見れます！</p>
+<h2 id="動かしてみる"><a name="動かしてみる" class="plugin-anchor" href="#動かしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>動かしてみる</h2>
+<p><img src="https://i.gyazo.com/00479a4c75aa549cb0f6d4ad820a2701.png" alt="image"></p>
+<p>inject ノードをクリックしてみましょう。</p>
+<p>inject ノードから送られたタイムスタンプが LINE Notify ノードに送られて、実際に LINE アプリの LINE Notify にメッセージが配信されます。</p>
+<p><img src="https://i.gyazo.com/579776460366346cd4ee3da17898bb0d.png" alt="image"></p>
+<p>LINE アプリの LINE Notify を見てみると、メッセージが到着しています！</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
 <p><img src="https://i.gyazo.com/aba8ccd625e7320883851b71ebd0caf2.png" alt="image"></p>
 <p>ここまでで質問があればどうぞ！</p>
 <h1 id="次にすすみましょう"><a name="次にすすみましょう" class="plugin-anchor" href="#次にすすみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>次にすすみましょう</h1>
-<p>左のナビゲーションから「LINE Notify にメッセージを送ろう」にすすみましょう。</p>
+<p>左のナビゲーションから「Discover Flow で WEB アプリ体験」にすすみましょう。</p>
 
                                 
                                 </section>
@@ -453,14 +458,10 @@
 
             
                 
-                <a href="03-01-enebular-hello-world.html" class="navigation navigation-prev " aria-label="Previous page: enebular から WEB に Hello World しよう">
+                <a href="03-02-enebular-dashboard.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: enebular のダッシュボードを動かそう">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="03-03-linenotify.html" class="navigation navigation-next " aria-label="Next page: LINE Notify にメッセージを送ろう">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -469,7 +470,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"enebular のダッシュボードを動かそう","level":"1.4.4","depth":2,"next":{"title":"LINE Notify にメッセージを送ろう","level":"1.4.5","depth":2,"path":"03-03-linenotify.md","ref":"03-03-linenotify.md","articles":[]},"previous":{"title":"enebular から WEB に Hello World しよう","level":"1.4.3","depth":2,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-02-enebular-dashboard.md","mtime":"2021-12-17T07:56:24.974Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-17T07:56:31.188Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LINE Notify にメッセージを送ろう","level":"1.4.5","depth":2,"next":{"title":"WEB アプリを体験して仕組みを知ろう","level":"1.5","depth":1,"ref":"","articles":[{"title":"Discover Flow で WEB アプリ体験","level":"1.5.1","depth":2,"path":"04-00-discover-flow.md","ref":"04-00-discover-flow.md","articles":[]},{"title":"LINE Notify フロー体験","level":"1.5.2","depth":2,"path":"04-01-flow-line-notify.md","ref":"04-01-flow-line-notify.md","articles":[]},{"title":"位置情報メモ投稿アプリフロー体験","level":"1.5.3","depth":2,"path":"04-02-location-app.md","ref":"04-02-location-app.md","articles":[]},{"title":"ふりかえり＆質疑応答","level":"1.5.4","depth":2,"path":"99-discussion.md","ref":"99-discussion.md","articles":[]}]},"previous":{"title":"enebular のダッシュボードを動かそう","level":"1.4.4","depth":2,"path":"03-02-enebular-dashboard.md","ref":"03-02-enebular-dashboard.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-03-linenotify.md","mtime":"2021-12-17T07:56:27.077Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-17T07:56:31.188Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

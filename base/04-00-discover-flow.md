@@ -8,6 +8,17 @@
 
 [Discovering Assets](https://docs.enebular.com/ja/Discover/) を参考に、Discover Flow からインポートして WEB アプリを体験します。
 
+## Discover Flow とは
+
+![image](https://blog.enebular.com/wp-content/uploads/2020/11/box-image-768x395.png)
+
+[Discoverとは何か \| enebular blog](https://blog.enebular.com/function/discover/)
+
+> Discoverとは
+> 自分の作ったフローを他のユーザに使ってもらうために公開する場所のことです。
+
+ここまで説明したものよりも、仕組みとして少し踏み込んだフローを講師の方が作っておきましたので、Discover Flow から読み込んで動かしてみます。
+
 ## エディタ画面を閉じましょう
 
 エディタ画面の Chrome タブは閉じましょう。
