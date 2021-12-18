@@ -4,7 +4,7 @@
 
 ## 今回の仕組み
 
-![image](https://i.gyazo.com/587e13c10ad85a84e73c2725b1b1ee72.png)
+![image](https://i.gyazo.com/9e67a96ac7c73a01e5bd6a13b6c93d69.png)
 
 この仕組みは、ダッシュボードでクイズアプリサンプルフロー体験します。
 
