@@ -12,6 +12,8 @@
 
 inject ノードをクリックすると LINE Nofify フローにタイムスタンプのデータが送られて LINE の今回作った LINE Notify チャットにメッセージが到着します。
 
+![image](https://i.gyazo.com/de8a891f0c2baede37ca047ed3f8decb.png)
+
 Node-RED のダッシュボード機能でできた WEB アプリからメッセージを送って LINE Notify チャットにメッセージが到着する流れも体験します。
 
 ## Discover Flow

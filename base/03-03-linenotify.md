@@ -16,6 +16,10 @@ enebular から LINE Notify にメッセージを送ります。LINE Notify ノ�
 > Webサービスと連携すると、LINEが提供する公式アカウント"LINE Notify"から通知が届きます。
 > 複数のサービスと連携でき、グループでも通知を受信することが可能です。
 
+![image](https://i.gyazo.com/d4c9ebc3e2fee7879bbd183e241c832b.png)
+
+このように、Webサービスからの通知を LINE 側のメッセージシステムが受け付けてユーザーの LINE アプリにメッセージを配信します。
+
 ![image](https://i.gyazo.com/a2776766858a54cd0ae3ccf0941b1d97.png)
 
 自分の LINE に通知としてメッセージを受け取ることができる仕組みです。
@@ -33,6 +37,8 @@ enebular から LINE Notify にメッセージを送ります。LINE Notify ノ�
 もし、このレベルに使いやすい仕組みを自分でイチからつくるとなると、WEB サーバーの知識・HTML/CSS/JavaScript といった WEB 表示の知識・セキュリティへの配慮・多くのユーザーがいる状況などなど整えるべきことが数多くあります。「こういう通知内容は実際役に立つだろうか？」というシンプルな試行錯誤をするまでに、たくさんの時間がかかります。
 
 このあたりを、LINE Nofity および LINE アプリで、すぐに試せるというのは、自分たちの構想を試して良くしていくときには強い味方になります！
+
+![image](https://i.gyazo.com/160d13cd5d0c8aff4207771863479a7e.png)
 
 では、早速、enebular から LINE Notify にメッセージを送ってみましょう。
 
