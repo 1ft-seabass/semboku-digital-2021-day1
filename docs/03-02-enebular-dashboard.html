@@ -275,6 +275,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.4" data-path="04-03-extra-quiz-app.html">
+            
+                <a href="04-03-extra-quiz-app.html">
+            
+                    
+                    ダッシュボードでクイズアプリサンプル
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -341,6 +354,7 @@
                                 <h1 id="enebular-のダッシュボードを動かそう"><a name="enebular-のダッシュボードを動かそう" class="plugin-anchor" href="#enebular-のダッシュボードを動かそう"><i class="fa fa-link" aria-hidden="true"></i></a>enebular のダッシュボードを動かそう</h1>
 <p><img src="https://i.gyazo.com/2fe8f1e2d461451f6b5212996272c3ee.jpg" alt="image"></p>
 <h2 id="このページの概要"><a name="このページの概要" class="plugin-anchor" href="#このページの概要"><i class="fa fa-link" aria-hidden="true"></i></a>このページの概要</h2>
+<p><img src="https://i.gyazo.com/d75c2f6861d40b92a9afd3d1a6cfaee8.png" alt="image"></p>
 <p>enebular でより手軽に WEB アプリのパーツが作れるダッシュボードノードを使ってボタンを押したら Node-RED で値が確認できる仕組みを体験します。</p>
 <h2 id="ダッシュボードノード"><a name="ダッシュボードノード" class="plugin-anchor" href="#ダッシュボードノード"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードノード</h2>
 <p><img src="https://i.gyazo.com/b028724a2564aecb8641d17e971059cf.png" alt="image"></p>
@@ -392,6 +406,27 @@
 <p>あいさつのような言葉を入力します。</p>
 <p><img src="https://i.gyazo.com/eceb00886b9b41351c647f227f2b39fb.png" alt="image"></p>
 <p>設定できたら完了ボタンをクリックします。</p>
+<h2 id="今回の-dashboard-配置イメージ"><a name="今回の-dashboard-配置イメージ" class="plugin-anchor" href="#今回の-dashboard-配置イメージ"><i class="fa fa-link" aria-hidden="true"></i></a>今回の dashboard 配置イメージ</h2>
+<p>プロパティからタブやグループを新規に作ったので、実際にどのように作られたかイメージが湧きづらいかもしれないので、補足します。</p>
+<p><img src="https://i.gyazo.com/2b54e9c0dfe904b05d217ce1d38338e5.png" alt="image"></p>
+<p>ダッシュボードのタブやグループの配置については、こちらのサイドバーの Dashboard 管理タブに集まっています。</p>
+<p><img src="https://i.gyazo.com/e479886d841a4a0853373768b988267f.png" alt="image"></p>
+<p>このように、配置からホームタブがありタブ内にデフォルトというグループが配置されていることが確認できます。タブやグループを増やしてレイアウトを変更するときは、こちらから行えます。</p>
+<p><img src="https://i.gyazo.com/ff5525086b1a60bda9f1732ec950226f.png" alt="image"></p>
+<p>配置イメージはこのような感じです。タブは、その時に表示される画面全体をつかさどるものです。グループはタブの中で、ダッシュボードの各パーツが配置されるときの1つの集まりです。</p>
+<p><img src="https://i.gyazo.com/9b4ccd27af5ae758c6b1f3dd604c1341.png" alt="image"></p>
+<p>デフォルトのツリーをクリックして開くと今回の button が配置されていることが分かります。</p>
+<p><img src="https://i.gyazo.com/3f160f014fe68fe2c64d9c49abf122ec.png" alt="image"></p>
+<p>この デフォルト の横の編集ボタンをクリックして、このグループのプロパティを見てみましょう。</p>
+<p><img src="https://i.gyazo.com/3dfbb3e92f29aa82316139d72a6c6b78.png" alt="image"></p>
+<p>dashboard button ノードの中の設定でも見たグループのプロパティと同じものです。こちらの幅が 6 というのが、グループがタブ内のどれくらいの幅を確保しているかを設定しています。通常 6 で設定されています。</p>
+<p><img src="https://i.gyazo.com/4fa747b258943e64e7c176ffece6ac5b.png" alt="image"></p>
+<p>幅の確保はこのようなイメージです。</p>
+<p>このように、ダッシュボードはレイアウトの概念をうまく肩代わりしてくれて気を利かして設定してくれるので、サッと作るぶんには、これだけでかなりのレイアウトを構築できます。</p>
+<p>ユーザーとのやり取りの入口となるユーザーインターフェースの部分を、自分の発想に応じてすぐ試すことができるので、今後使えるようにしていきましょう！</p>
+<ul>
+<li>時間があれば、もう少し、ダッシュボード管理の詳細を説明してみる。</li>
+</ul>
 <h2 id="dashboard-button-ノードのデータを受け取る-debug-ノードを設定"><a name="dashboard-button-ノードのデータを受け取る-debug-ノードを設定" class="plugin-anchor" href="#dashboard-button-ノードのデータを受け取る-debug-ノードを設定"><i class="fa fa-link" aria-hidden="true"></i></a>dashboard button ノードのデータを受け取る debug ノードを設定</h2>
 <p><img src="https://i.gyazo.com/cbdee93cae3a83830f4e79243782b27d.png" alt="image"></p>
 <p>debug ノードをパレットから配置して、このように dashboard button ノードからつなぎます。</p>
@@ -419,10 +454,12 @@
 <h2 id="スマートフォンでも見てみましょう"><a name="スマートフォンでも見てみましょう" class="plugin-anchor" href="#スマートフォンでも見てみましょう"><i class="fa fa-link" aria-hidden="true"></i></a>スマートフォンでも見てみましょう</h2>
 <p><img src="https://i.gyazo.com/e43c8f60ac53d382180a24ea45560926.png" alt="image"></p>
 <p>ぜひ、スマートフォンでも表示して見て、良い感じに表示されるダッシュボードを体験してみましょう。</p>
+<p><img src="https://i.gyazo.com/9d543bdd42fd26a58c1ed48b38d5345d.png" alt="image"></p>
+<p>スマートフォンだと、タブとグループのレイアウトブロックがスマートフォンの縦長のレイアウトに合わせて調節しくれます。</p>
 <h2 id="ダッシュボードノードで手軽に画面が作れる"><a name="ダッシュボードノードで手軽に画面が作れる" class="plugin-anchor" href="#ダッシュボードノードで手軽に画面が作れる"><i class="fa fa-link" aria-hidden="true"></i></a>ダッシュボードノードで手軽に画面が作れる</h2>
 <p><img src="https://i.gyazo.com/b028724a2564aecb8641d17e971059cf.png" alt="image"></p>
 <p>引用: <a href="https://flows.nodered.org/node/node-red-dashboard" target="_blank">node-red-dashboard (node) - Node-RED</a></p>
-<p>このようにダッシュボードノードで手軽に画面が作れましたね。ぜひ、ほかのノードも試してみましょう。</p>
+<p>このようにダッシュボードノードで手軽に画面が作れましたね。ぜひ、ほかのダッシュボードノードの部品も試してみましょう。</p>
 <p>このあとお伝えする Discover Flow でもダッシュボードノードの利用例が見れます！</p>
 <h1 id="質疑応答"><a name="質疑応答" class="plugin-anchor" href="#質疑応答"><i class="fa fa-link" aria-hidden="true"></i></a>質疑応答</h1>
 <p><img src="https://i.gyazo.com/aba8ccd625e7320883851b71ebd0caf2.png" alt="image"></p>
@@ -472,7 +509,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"enebular のダッシュボードを動かそう","level":"1.4.4","depth":2,"next":{"title":"LINE Notify にメッセージを送ろう","level":"1.4.5","depth":2,"path":"03-03-linenotify.md","ref":"03-03-linenotify.md","articles":[]},"previous":{"title":"enebular から WEB に Hello World しよう","level":"1.4.3","depth":2,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-02-enebular-dashboard.md","mtime":"2021-12-17T13:33:19.091Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-17T13:52:30.723Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"enebular のダッシュボードを動かそう","level":"1.4.4","depth":2,"next":{"title":"LINE Notify にメッセージを送ろう","level":"1.4.5","depth":2,"path":"03-03-linenotify.md","ref":"03-03-linenotify.md","articles":[]},"previous":{"title":"enebular から WEB に Hello World しよう","level":"1.4.3","depth":2,"path":"03-01-enebular-hello-world.md","ref":"03-01-enebular-hello-world.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"仙北市デジタル人材育成講座","language":"ja","gitbook":"*","description":"仙北市デジタル人材育成講座の 1 日目資料"},"file":{"path":"03-02-enebular-dashboard.md","mtime":"2021-12-18T00:52:37.243Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-18T00:53:03.541Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
